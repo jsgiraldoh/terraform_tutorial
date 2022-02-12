@@ -28,6 +28,8 @@ Como se abordo la solución de este requerimiento:
  
 3. El tercer paso consite en configurar el archivo credentials dentro del home de usuario en el directorio **.aws/crendentials**.
 
+<img src="/img/1.png" title="1.png" name="1.png"/><br>
+
 4. También se pueden exportar las credenciales de tú cuenta de amazón, para que la cli funcione correctamente.
 
     ~~~
@@ -68,6 +70,8 @@ Teniendo en cuenta que no se sabia como se iba a comportar la ejecución del arc
     terraform -help
     ~~~
 
+    <img src="/img/2.png" title="2.png" name="2.png"/><br>
+
 7. Inicialice el proyecto, que descarga un complemento que permite que Terraform interactúe con aws.
 
     ~~~
@@ -80,14 +84,18 @@ Teniendo en cuenta que no se sabia como se iba a comportar la ejecución del arc
     terraform plan
     ~~~
 
+    <img src="/img/3.png" title="3.png" name="3.png"/><br>
+
     Para verificar la sintaxis del archivo y observar que elementos van ha ser creados y los posibles errores que pueda arrojar.
 
 9. Para lanzar la ejecución utilizamos el siguiente comando:
 
     ~~~
     terraform apply
-    ~~~~
-    
+    ~~~
+
+    <img src="/img/4.png" title="4.png" name="4.png"/><br>
+
 10. Para crear la llave, se utilizo el siguiente comando:
     
     ~~~
@@ -107,6 +115,8 @@ Teniendo en cuenta que no se sabia como se iba a comportar la ejecución del arc
     Diríjase al siguiente tutorial para entender toda la solución propuesta con packer.
     
     https://github.com/jsgiraldoh/packer_tutorial
+
+    <img src="/img/9.png" title="9.png" name="9.png"/><br>
     
 13. Posteriormente luego de crear el AMI y obtener el ID, se inicio el desarrollo del archivo **ec2_instance.tf**.
 
@@ -165,7 +175,21 @@ module "ec2_instancedb" {
     terraform apply -auto-approve
     ~~~
 
+    <img src="/img/8.png" title="8.png" name="8.png"/><br>
+
 15. Observamos todos los elementos creados en AWS.
+
+    <img src="/img/5.png" title="5.png" name="5.png"/><br>
+
+    <img src="/img/6.png" title="6.png" name="6.png"/><br>
+
+    <img src="/img/7.png" title="7.png" name="7.png"/><br>
+
+    <img src="/img/13.png" title="13.png" name="13.png"/><br>
+
+    <img src="/img/14.png" title="14.png" name="14.png"/><br>
+
+    <img src="/img/15.png" title="15.png" name="15.png"/><br>
 
 16. Ingresamos a la instancia del **front-end**.
 
@@ -173,7 +197,9 @@ module "ec2_instancedb" {
 
     ~~~
     vim hello.js
-    ~~~~
+    ~~~
+
+    <img src="/img/21.png" title="21.png" name="21.png"/><br>
 
 18. Debemos adicionar el siguiente código:
 
@@ -206,14 +232,24 @@ server.listen(port, hostname, () => {
     ~~~
     npm install mongodb --save
     ~~~
+
+    <img src="/img/11.png" title="11.png" name="11.png"/><br>
     
 20. Luego ejecutamos nuestro archivo **js**, el cual va a prestar un servicio http.
 
     ~~~
     node hello.js
     ~~~
+
+    <img src="/img/10.png" title="10.png" name="10.png"/><br>
   
 21. Resultados de ejecutar la petición por el **browser**:
+
+    <img src="/img/18.png" title="18.png" name="18.png"/><br>
+
+    <img src="/img/20.png" title="20.png" name="20.png"/><br>
+
+    <img src="/img/19.png" title="19.png" name="19.png"/><br>
 
 22. Probando conexión desde la instancia del **back-end**, hacien el front-end**.
 
@@ -221,6 +257,10 @@ server.listen(port, hostname, () => {
     sudo apt install mongodb-clients
     ~~~
 
+    <img src="/img/17.png" title="17.png" name="17.png"/><br>
+
     ~~~
     mongo -p 27017 34.221.74.165
     ~~~
+
+    <img src="/img/16.png" title="16.png" name="16.png"/><br>
