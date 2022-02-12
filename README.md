@@ -193,6 +193,8 @@ module "ec2_instancedb" {
 
 16. Ingresamos a la instancia del **front-end**.
 
+    <img src="/img/14.png" title="14.png" name="14.png"/><br>
+
 17. Creamos nuestro archivo **javascript** con el siguiente comando:
 
     ~~~
