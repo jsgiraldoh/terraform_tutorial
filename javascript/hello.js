@@ -3,7 +3,7 @@ const hostname = 'localhost';
 const port = 3000;
 
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://35.86.135.155:27017/test';
+var url = 'mongodb://34.221.74.165:27017/test';
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
